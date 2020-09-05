@@ -59,6 +59,7 @@ table {
 body *{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13.5px;
+    color: rgb(105, 104, 104,1);
 }
 /*
   ========================================
@@ -79,7 +80,7 @@ body *{
 
 .nav-bar li a {
     text-decoration: none;
-    color: rgb(105, 104, 104,1); 
+     
 }
 
 .nav-bar li a:hover {
@@ -90,3 +91,70 @@ body *{
 .fa-th:hover {        
     color: #000;
 }
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
+.main{
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top:100px;
+}
+
+main a {
+    color: blue;
+    text-decoration: none;
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 8px 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    margin-left:8px;
+    font-size: 14px;
+
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: #000;  /* change laterrrrrrr*/
+ 
+}
+
+.fa-search {
+   position: absolute;
+   display: block;
+   margin: 17px;
+   z-index: 1;
+   color: #9aa0a6;
+}
+
+.main input{
+    position: relative;
+    width: 580px;
+    height: 40px;
+    padding-left: 45px;
+    border-radius: 30px;
+    border: 1px solid #e6e6e6;
+     
+}
+
+.main input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+    
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
