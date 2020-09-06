@@ -57,10 +57,15 @@ table {
     display: flex;
 }
 body *{
+   
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13.5px;
+    font-size: 13px;
     color: rgb(105, 104, 104,1);
 }
+button , footer {
+    font-size: 14px;
+}
+
 /*
   ========================================
   Navigation Bar
@@ -104,7 +109,7 @@ body *{
     justify-content: center;
     align-items: center;
     gap: 2em;
-    margin-top:100px;
+    margin-top: 6em;
 }
 
 main a {
@@ -116,32 +121,33 @@ main a:hover {
 }
 
 button {
-    padding: 8px 20px;
+    padding: 0.5em 1.25em;
     border: 1px solid #eeeeee;
     border-radius: 4px;
-    margin-left:8px;
-    font-size: 14px;
+    margin-left:0.5em;
 
 }
 button:hover {
     cursor: pointer;
-    box-shadow: #000;  /* change laterrrrrrr*/
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
  
 }
 
 .fa-search {
    position: absolute;
    display: block;
-   margin: 17px;
+   margin: 1em;
    z-index: 1;
    color: #9aa0a6;
 }
 
 .main input{
     position: relative;
-    width: 580px;
+    width: 570px;
     height: 40px;
-    padding-left: 45px;
+    padding-left: 3.5em;
     border-radius: 30px;
     border: 1px solid #e6e6e6;
      
@@ -158,3 +164,52 @@ button:hover {
   Footer
   ========================================
 */
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+
+.country {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 15px 27px;
+
+}
+.footer-links {
+    justify-content: space-between;
+    padding: 10px;
+    padding: 15px 27px;
+  
+}
+.left-footer, .right-footer{
+    gap: 2em;
+   
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:700px) {
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 2.1em;
+        align-items: center;
+    }
+    .right-footer{
+        order: -1;
+;
+    }
+
+    .main input{
+        width: 370px;
+       
+    }
+}
