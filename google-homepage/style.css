@@ -57,7 +57,7 @@ table {
     display: flex;
 }
 body *{
-   
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: rgb(105, 104, 104,1);
@@ -138,7 +138,7 @@ button:hover {
 .fa-search {
    position: absolute;
    display: block;
-   margin: 1em;
+   margin: 0.8em;
    z-index: 1;
    color: #9aa0a6;
 }
@@ -156,6 +156,10 @@ button:hover {
 .main input:hover {
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     border-color: rgba(223,225,229,0);
+    
+}
+.main input:focus  {
+    outline: none;
     
 }
 
@@ -207,9 +211,40 @@ footer a:hover {
         order: -1;
 ;
     }
-
     .main input{
         width: 370px;
        
     }
 }
+
+/*
+  ========================================
+  İnput click
+  ========================================
+*/
+
+
+.last-search {
+    width: 570px;
+    border: 1px solid red;
+    
+}
+
+.last-search-items {
+    justify-content: space-between;
+    padding: 8px;
+}
+.text {
+    gap: 15px;
+    color: #52188c;
+}
+
+.last-search-items:hover {
+    background-color: #efeded;
+}
+.last-search-items a {
+   color: #696868
+}
+.last-search-items a:hover {
+    color: #0004ff
+ }
