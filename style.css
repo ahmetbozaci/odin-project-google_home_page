@@ -217,34 +217,3 @@ footer a:hover {
     }
 }
 
-/*
-  ========================================
-  İnput click
-  ========================================
-*/
-
-
-.last-search {
-    width: 570px;
-    border: 1px solid red;
-    
-}
-
-.last-search-items {
-    justify-content: space-between;
-    padding: 8px;
-}
-.text {
-    gap: 15px;
-    color: #52188c;
-}
-
-.last-search-items:hover {
-    background-color: #efeded;
-}
-.last-search-items a {
-   color: #696868
-}
-.last-search-items a:hover {
-    color: #0004ff
- }
