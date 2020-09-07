@@ -1,50 +1,137 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*
@@ -54,16 +141,19 @@ table {
 */
 
 .flex {
-    display: flex;
+  display: flex;
 }
-body *{
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: rgb(105, 104, 104,1);
+
+body * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(105, 104, 104, 1);
 }
-button , footer {
-    font-size: 14px;
+
+button,
+footer {
+  font-size: 14px;
 }
 
 /*
@@ -73,28 +163,43 @@ button , footer {
 */
 
 .nav-bar {
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0.1em 1em;
-    
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.1em 1em;
 }
+
 .nav-bar li {
-    padding: 0.8em;
-   
+  padding: 0.8em;
+}
+
+main a {
+  color: blue;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .nav-bar li a {
-    text-decoration: none;
-     
+  text-decoration: none;
 }
 
 .nav-bar li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* app-icon */
-.fa-th:hover {        
-    color: #000;
+.fa-th:hover {
+  color: #000;
 }
 
 /*
@@ -102,65 +207,54 @@ button , footer {
   Main
   ========================================
 */
-.main{
-    width: 100%;
-    height: 50vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    margin-top: 6em;
-}
-
-main a {
-    color: blue;
-    text-decoration: none;
-}
-main a:hover {
-    text-decoration: underline;
+.main {
+  width: 100%;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-top: 6em;
 }
 
 button {
-    padding: 0.5em 1.25em;
-    border: 1px solid #eeeeee;
-    border-radius: 4px;
-    margin-left:0.5em;
-
+  padding: 0.5em 1.25em;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-left: 0.5em;
 }
+
 button:hover {
-    cursor: pointer;
-    background-color: #f8f8f8;
-    border: 1px solid #c6c6c6;
-    color: #222;
- 
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
 }
 
 .fa-search {
-   position: absolute;
-   display: block;
-   margin: 0.8em;
-   z-index: 1;
-   color: #9aa0a6;
+  position: absolute;
+  display: block;
+  margin: 0.8em;
+  z-index: 1;
+  color: #9aa0a6;
 }
 
-.main input{
-    position: relative;
-    width: 570px;
-    height: 40px;
-    padding-left: 3.5em;
-    border-radius: 30px;
-    border: 1px solid #e6e6e6;
-     
+.main input {
+  position: relative;
+  width: 570px;
+  height: 40px;
+  padding-left: 3.5em;
+  border-radius: 30px;
+  border: 1px solid #e6e6e6;
 }
 
 .main input:hover {
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    border-color: rgba(223,225,229,0);
-    
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
-.main input:focus  {
-    outline: none;
-    
+
+.main input:focus {
+  outline: none;
 }
 
 /*
@@ -169,51 +263,43 @@ button:hover {
   ========================================
 */
 
-.footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    flex-direction: column;
-    background-color: #f2f2f2;
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  background-color: #f2f2f2;
 }
 
 .country {
-    border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
-    padding: 15px 27px;
-
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px 27px;
 }
+
 .footer-links {
-    justify-content: space-between;
-    padding: 10px;
-    padding: 15px 27px;
-  
-}
-.left-footer, .right-footer{
-    gap: 2em;
-   
-}
-footer a {
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 15px 27px;
 }
 
-@media screen and (max-width:700px) {
-    
-    .footer-links {
-        flex-direction: column;
-        gap: 2.1em;
-        align-items: center;
-    }
-    .right-footer{
-        order: -1;
-;
-    }
-    .main input{
-        width: 370px;
-       
-    }
+.left-footer,
+.right-footer {
+  gap: 2em;
 }
 
+@media screen and (max-width: 700px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 2.1em;
+    align-items: center;
+  }
+
+  .right-footer {
+    order: -1;
+  }
+
+  .main input {
+    width: 370px;
+  }
+}
