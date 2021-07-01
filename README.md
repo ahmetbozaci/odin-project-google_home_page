@@ -9,7 +9,7 @@ Clone of google home page
 
 ## Built With
 
-- MHTML
+- HTML
 - CSS
 
 
