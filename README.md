@@ -1,12 +1,11 @@
 
 
-# Project Name
+# GOOGLE HOME PAGE
 
 Clone of google home page
 
 ![screenshot](./images/screenshot.png)
 
-Additional description about the project and its features.
 
 ## Built With
 
@@ -17,7 +16,6 @@ Additional description about the project and its features.
 ## Live Demo
 
 [Live Demo Link](https://ahmetbozaci.github.io/odin-project-google_home_page/)
-
 
 
 ## Authors
